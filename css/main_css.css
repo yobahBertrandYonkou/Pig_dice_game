@@ -1,0 +1,130 @@
+body{
+    background-color: #070d59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#container{
+    background-color: #4c9267;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-shadow: 1px 6px 25px 5px;
+    border-top: 5px solid #22ab50;
+    border-radius: 0.5em;
+}
+
+#player-1{
+    background-color: #1f3c88;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid;
+}
+
+#player-2{
+    background-color: #1f3c88;
+    width: 50%;
+    height: 100%; 
+}
+
+.player-name, .total-score{
+    margin-top: 10%;
+    font-family: 'Tahoma';
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.total-score{
+    font-size: 72px;
+}
+
+.sub-score{
+    font-family: 'Tahoma';
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    border: 1px solid;
+    margin: 55% auto;
+    width: 30%;
+    border-style: inset;
+}
+
+img, span{
+    filter: drop-shadow(2.5px 2.5px 10px #000000);
+    float: left;
+    position: absolute;
+}
+
+.roll{
+    margin-top: 30%;
+    font-family: 'Tahoma';
+    font-weight: bolder;
+    border-style: dashed;
+    padding: 5px;
+    background-color: #1f3c88;
+}
+
+.hold{
+    margin-top: 50%;
+}
+.roll:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.roll:active{
+    font-size: 14px;
+}
+
+.roll::selection, .player-name::selection, .total-score::selection, .sub-score::selection{
+    background-color: transparent;
+}
+
+.new-game{
+    margin-top: -67.5%;
+    font-size: small;
+    border: none;
+    background-color: transparent;
+    padding: 2.5px;
+}
+
+.new-game, .plus-circle{
+    font-size: xx-large;
+}
+
+@media only screen and (min-width: 1080px){
+    .roll{
+        margin-top: 17.5%;
+        font-family: 'Tahoma';
+        font-weight: bolder;
+        border-style: dashed;
+        padding: 5px;
+        background-color: #1f3c88;
+    }
+    
+    .hold{
+        margin-top: 27.5%;
+    }
+
+    .sub-score{
+        margin: 20% auto;
+    }
+
+    .new-game{
+        margin-top: -30%;
+        font-size: small;
+        border: none;
+        background-color: transparent;
+        padding: 2.5px;
+    }
+}
+
